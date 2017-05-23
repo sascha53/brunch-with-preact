@@ -10,5 +10,10 @@ exports.files = {
 };
 
 exports.plugins = {
-  babel: {presets: ['latest', 'react']}
+  babel: {
+  	presets: ['latest'],
+  	plugins: [
+  		['transform-react-jsx', {pragma: 'h'}]	
+  	]
+	}
 };
